@@ -33,11 +33,11 @@
   * 
 3. Quality-based Face Filtering        
   (1) Blur Score
-  * Laplacian variance로 프레임 선명도 측정
-  * 블러가 심한 경우 artifact 정보 손실
+   * Laplacian variance로 프레임 선명도 측정
+   * 블러가 심한 경우 artifact 정보 손실
   (2) Face Area
-  * 얼굴 영역이 클수록 고주파 정보 보존
-  * 작은 얼굴은 정보 손실 가능성 증가
+   * 얼굴 영역이 클수록 고주파 정보 보존
+   * 작은 얼굴은 정보 손실 가능성 증가
  
 4. Best-K Face Selection      
    Blur와 Area를 정규화하여 종합 점수 계산    
@@ -60,10 +60,10 @@
 - Frame-level Prediction
   * 각 얼굴 crop에 대해 Fake probability 예측
 - Video-level Aggregation
-* 단순 mean 대신 Top-K Mean Aggregation
+  * 단순 mean 대신 Top-K Mean Aggregation
 - 이유
-* 딥페이크 artifact는 일부 프레임에 집중되는 경우가 많음
-* 평균보다 이상치(artifact 강한 프레임)에 민감
+  * 딥페이크 artifact는 일부 프레임에 집중되는 경우가 많음
+  * 평균보다 이상치(artifact 강한 프레임)에 민감
    
 # 실험 결과 및 인사이트
 
