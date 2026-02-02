@@ -33,8 +33,8 @@
   * 
 3. Quality-based Face Filtering        
   (1) Blur Score
-   * Laplacian variance로 프레임 선명도 측정
-   * 블러가 심한 경우 artifact 정보 손실
+   * Laplacian variance로 프레임 선명도 측정   
+   * 블러가 심한 경우 artifact 정보 손실    
   (2) Face Area
    * 얼굴 영역이 클수록 고주파 정보 보존
    * 작은 얼굴은 정보 손실 가능성 증가
