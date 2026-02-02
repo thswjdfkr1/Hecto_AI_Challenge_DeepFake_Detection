@@ -16,13 +16,16 @@
 
 # 데이터 전처리 : 		 		   
 1. Frame Sampling (Video)
-   * 비디오의 전체 프레임 중 균등 샘플링      
-   * 계산 비용과 정보 다양성의 균형을 고려   
+ * 비디오의 전체 프레임 중 균등 샘플링      
+ * 계산 비용과 정보 다양성의 균형을 고려   
 
-2. Face Detection & Alignment         
-   
-   PDF 문서에는 검색에 불필요한 사진, 특수 문자, 공백, 줄바꿈, 부록 등의 불필요한 요소들이 포함될 수 있음    
-
+2. Face Detection & Alignment            
+ * dlib 기반 얼굴 검출
+ * 5개 핵심 랜드마크(눈, 코, 입) 기반 얼굴 정렬
+ * 다양한 얼굴 크기 대응을 위해 multi-scale crop 적용
+- 선택 이유
+* 얼굴 정렬을 통해 pose/scale variation 감소
+* downstream 모델의 입력 분포 안정화
 4. Split        
      
    RecursiveCharacterTextSplitter를 사용하여 문서를 잘게 분할함.    
