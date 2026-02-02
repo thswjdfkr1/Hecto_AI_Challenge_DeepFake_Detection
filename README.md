@@ -24,8 +24,8 @@
  * 5개 핵심 랜드마크(눈, 코, 입) 기반 얼굴 정렬
  * 다양한 얼굴 크기 대응을 위해 multi-scale crop 적용
 - 선택 이유
-* 얼굴 정렬을 통해 pose/scale variation 감소
-* downstream 모델의 입력 분포 안정화
+ * 얼굴 정렬을 통해 pose/scale variation 감소
+ * downstream 모델의 입력 분포 안정화
 4. Split        
      
    RecursiveCharacterTextSplitter를 사용하여 문서를 잘게 분할함.    
